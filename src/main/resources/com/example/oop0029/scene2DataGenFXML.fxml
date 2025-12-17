@@ -11,4 +11,18 @@
             fx:controller="$CONTROLLER_NAME$"
             prefHeight="400.0" prefWidth="600.0" >
 
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oop0029.Scene2DataGenController">
+   <children>
+      <TableView fx:id="monTableView" layoutX="47.0" layoutY="57.0" prefHeight="242.0" prefWidth="506.0">
+         <columns>
+            <TableColumn fx:id="nameCol" prefWidth="152.79998779296875" text="Monitor name" />
+            <TableColumn fx:id="resCol" prefWidth="119.20001220703125" text="Resolution" />
+            <TableColumn fx:id="diaCol" prefWidth="128.0" text="Diagonal" />
+            <TableColumn fx:id="ppiCol" prefWidth="106.39996337890625" text="PPI" />
+         </columns>
+      </TableView>
+      <Button layoutX="63.0" layoutY="422.0" mnemonicParsing="false" onAction="#loadFromBinBtn" prefHeight="26.0" prefWidth="158.0" text="Load from BIN" />
+      <Button layoutX="365.0" layoutY="422.0" mnemonicParsing="false" onAction="#scene1Btn" prefHeight="26.0" prefWidth="158.0" text="Scene 1" />
+      <Label fx:id="statusLabel" layoutX="286.0" layoutY="308.0" />
+   </children>
 </AnchorPane>
