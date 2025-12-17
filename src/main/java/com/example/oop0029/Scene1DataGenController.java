@@ -17,6 +17,27 @@ import java.io.ObjectOutputStream;
 public class Scene1DataGenController
 {
     @javafx.fxml.FXML
+    private TableView<Monitor_2320676> monTableView;
+    @javafx.fxml.FXML
+    private TextField nameTF;
+    @javafx.fxml.FXML
+    private TableColumn<Monitor_2320676, String> nameCol;
+    @javafx.fxml.FXML
+    private ComboBox<String> resCB;
+    @javafx.fxml.FXML
+    private ComboBox<Integer> diaCB;
+    @javafx.fxml.FXML
+    private TableColumn<Monitor_2320676, String> resCol;
+    @javafx.fxml.FXML
+    private TableColumn<Monitor_2320676, Integer> diaCol;
+    @javafx.fxml.FXML
+    private TableColumn<Monitor_2320676, Integer> ppiCol;
+    @javafx.fxml.FXML
+    private Label addMonLabel;
+
+    private ObservableList<Monitor_2320676> monitorList = FXCollections.observableArrayList();
+
+    @javafx.fxml.FXML
     public void initialize() {
         resCB.getItems().addAll("HD", "HD+", "Full-HD", "QHD");
         diaCB.getItems().addAll(17, 19, 22, 24);
