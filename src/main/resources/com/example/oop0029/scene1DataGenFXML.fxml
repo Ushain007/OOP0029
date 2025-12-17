@@ -11,4 +11,25 @@
             fx:controller="$CONTROLLER_NAME$"
             prefHeight="400.0" prefWidth="600.0" >
 
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oop0029.Scene1DataGenController">
+   <children>
+      <TextField fx:id="nameTF" layoutX="131.0" layoutY="48.0" prefHeight="26.0" prefWidth="199.0" />
+      <ComboBox fx:id="resCB" layoutX="131.0" layoutY="100.0" prefHeight="26.0" prefWidth="199.0" />
+      <ComboBox fx:id="diaCB" layoutX="131.0" layoutY="158.0" prefHeight="26.0" prefWidth="199.0" />
+      <TableView fx:id="monTableView" layoutX="31.0" layoutY="254.0" prefHeight="200.0" prefWidth="505.0">
+        <columns>
+          <TableColumn fx:id="nameCol" prefWidth="152.79998779296875" text="Monitor name" />
+          <TableColumn fx:id="resCol" prefWidth="119.20001220703125" text="Resolution" />
+            <TableColumn fx:id="diaCol" prefWidth="128.0" text="Diagonal" />
+            <TableColumn fx:id="ppiCol" prefWidth="106.39996337890625" text="PPI" />
+        </columns>
+      </TableView>
+      <Button layoutX="31.0" layoutY="470.0" mnemonicParsing="false" onAction="#addMonBtn" prefHeight="26.0" prefWidth="105.0" text="Add monitor" />
+      <Button layoutX="152.0" layoutY="470.0" mnemonicParsing="false" onAction="#saveBtn" prefHeight="26.0" prefWidth="106.0" text="Save" />
+      <Button layoutX="277.0" layoutY="470.0" mnemonicParsing="false" onAction="#scene2Btn" prefHeight="26.0" prefWidth="106.0" text="Scene 2" />
+      <Label layoutX="39.0" layoutY="53.0" text="Name" />
+      <Label layoutX="39.0" layoutY="104.0" text="Resolution" />
+      <Label layoutX="39.0" layoutY="162.0" text="Diagonal" />
+      <Label fx:id="addMonLabel" layoutX="39.0" layoutY="208.0" />
+   </children>
 </AnchorPane>
